@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Header from "./Header";
-import JobList from "./JobList";
-import SearchBar from "./SearchBar";
+import Header from "../components/jobs/Header";
+import JobList from "../components/jobs/JobList";
+import SearchBar from "../components/SearchBar/SearchBar";
 
 const HomePage = () => {
   const [title, setTitle] = useState("");

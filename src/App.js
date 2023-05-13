@@ -1,5 +1,5 @@
 import { Routes, Route, Link, useParams } from "react-router-dom";
-import HomePage from "./components/HomePage";
+import HomePage from "./pages/HomePage";
 import CareerDetails from "./pages/CareerDetails";
 import { BrowserRouter } from "react-router-dom";
 

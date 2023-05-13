@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../data.json";
+import data from "../../data.json";
 import Jobs from "./Jobs";
 
 const JobList = ({ title, location, isChecked }) => {
