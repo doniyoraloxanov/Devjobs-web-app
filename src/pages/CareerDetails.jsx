@@ -19,7 +19,7 @@ const CareerDetails = () => {
       {/* Job  Header */}
       <div className="max-w-sm mx-auto md:max-w-2xl  ">
         <div className=" relative  top-[-40px]  ">
-          <div className=" bg-white dark:bg-black px-20 py-8 flex flex-col space-y-2 md:flex md:flex-row md:space-y-0  md:space-x-32  ">
+          <div className=" bg-white dark:bg-black px-20 py-8 flex flex-col space-y-6 md:flex md:flex-row md:space-y-0  md:space-x-32  ">
             <img
               src={job.logo}
               className={`bg-orange-800 md:w-36 inline-block  p-6 md:p-10  absolute top-[-25px]  self-center  md:top-0 md:left-0 

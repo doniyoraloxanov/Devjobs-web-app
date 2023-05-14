@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Jobs = ({ career }) => {
   return (
     <div
-      className="bg-white shadow-lg shadow-gray-300 p-7     
+      className="bg-white  shadow-gray-300 p-7     
       relative  w-96 z-0 dark:bg-black  dark:shadow-black shadow-sm "
     >
       <Link to={`/details/${career.id}`}>
@@ -12,7 +12,7 @@ const Jobs = ({ career }) => {
             <div className=" bg-orange-500 p-3 rounded-xl absolute top-[-20px] ">
               <img src={career.logo} className="inline-block w-7   " />
             </div>
-            <div className="mr-12 pt-4  flex space-x-2 text-gray-300">
+            <div className="mr-12 pt-4  flex space-x-2 text-gray-700 dark:text-gray-300">
               <span>{career.postedAt}</span>
               <span>{career.contract}</span>
             </div>

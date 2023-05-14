@@ -18,7 +18,7 @@ const SearchBarMobile = ({
           <div className="flex justify-center    ">
             <input
               placeholder="Filter by title..."
-              className="outline-none  py-6  px-6 pl-8  w-96 "
+              className="outline-none  py-6  px-6 pl-8  w-96 dark:bg-black dark:text-white "
               type="text"
               id="title"
               value={title}

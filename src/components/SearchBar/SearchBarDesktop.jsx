@@ -14,7 +14,7 @@ const SearchBarDesktop = ({
         <div className="relative ">
           <input
             placeholder="Filter by title..."
-            className="outline-none  py-6  px-6 pl-16  lg:w-[400px]  w-auto dark:bg-black "
+            className="outline-none  py-6  px-6 pl-16  lg:w-[400px]  w-auto dark:bg-black dark:text-white "
             type="text"
             id="title"
             value={title}
@@ -35,7 +35,7 @@ const SearchBarDesktop = ({
         <div className="relative">
           <input
             placeholder="Filter by location..."
-            className="outline-none  py-6  px-6 pl-16 dark:bg-black   w-auto  lg:w-[400px]"
+            className="outline-none  py-6  px-6 pl-16 dark:bg-black   w-auto  lg:w-[400px] dark:text-white"
             type="text"
             value={location}
             id="location"
