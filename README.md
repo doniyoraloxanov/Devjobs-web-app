@@ -19,7 +19,7 @@ This is a solution to the [Devjobs web app challenge on Frontend Mentor](https:/
 
 To build out a jobs board using the provided data, trying to get your project looking as close to the reference design as possible.
 
-Users should be able to:
+Users should be able to
 
 - View the optimal layout for each page depending on their device's screen size
 - See hover states for all interactive elements throughout the site
