@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- [Live Site](https://fm-devjobs-web-app.vercel.app/)
+- [Live Site](https://devjobs-web-app-sable.vercel.app/)
 
 ## My process
 
