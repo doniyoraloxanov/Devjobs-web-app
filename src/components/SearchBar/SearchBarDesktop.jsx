@@ -8,13 +8,13 @@ const SearchBarDesktop = ({
   isChecked,
 }) => {
   return (
-    <div className="hidden md:block ">
-      <form onSubmit={handleSubmit} className="flex space-x-1">
+    <div className="hidden md:block  ">
+      <form onSubmit={handleSubmit} className="flex  ">
         {/* Search by title*/}
         <div className="relative">
           <input
             placeholder="Filter by title..."
-            className="outline-none  py-6  px-6 pl-16 w-64 lg:w-96 "
+            className="outline-none  py-6  px-6 pl-16  lg:w-[400px]  w-auto"
             type="text"
             id="title"
             value={title}
@@ -30,11 +30,12 @@ const SearchBarDesktop = ({
             </svg>
           </span>
         </div>
+        <div className=" border"></div>
         {/* Search by location */}
         <div className="relative">
           <input
             placeholder="Filter by location..."
-            className="outline-none  py-6  px-6 pl-16  w-64 lg:w-96"
+            className="outline-none  py-6  px-6 pl-16   w-auto  lg:w-[400px]"
             type="text"
             value={location}
             id="location"
@@ -50,9 +51,9 @@ const SearchBarDesktop = ({
             </svg>
           </span>
         </div>
-
+        <div className=" border"></div>
         {/* Checkbox */}
-        <div className="flex items-center bg-white  w-64 lg:w-96 px-6 space-x-10 lg:space-x-40">
+        <div className="flex items-center bg-white   w-auto  lg:w-[400px] px-6 space-x-10 lg:space-x-28 ">
           <div className="flex items-center lg:space-x-8">
             <input
               id="default-checkbox"
@@ -61,13 +62,14 @@ const SearchBarDesktop = ({
               value={isChecked}
               checked={isChecked}
               onChange={onChange}
-              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 "
+              className="w-6 h-6  text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 "
             />
             <label
               htmlFor="checkbox"
-              className="ml-2 text-md font-bold text-gray-900  block"
+              className="ml-2 text-md font-bold text-gray-900  flex space-x-2"
             >
-              Full time
+              <span>Full</span>
+              <span>Time</span>
             </label>
           </div>
           <button
