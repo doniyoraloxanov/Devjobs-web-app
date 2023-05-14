@@ -41,7 +41,7 @@ const SearchBar = ({ onSearch, onLocation, isChecked, setIsChecked }) => {
   };
 
   return (
-    <div className="">
+    <div>
       <SearchBarMobile
         onTitle={handleTitleChange}
         onLocation={handleLocationChange}

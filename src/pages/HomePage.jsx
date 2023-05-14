@@ -21,7 +21,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="">
+    <div>
       <Header />
       <div className="flex justify-center">
         <div className=" flex justify-center absolute top-36 ">

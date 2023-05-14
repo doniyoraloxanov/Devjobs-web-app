@@ -5,7 +5,10 @@ import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <div className="bg-gray-200 h-full min-h-screen" id="container">
+    <div
+      className="bg-gray-200 h-full min-h-screen dark:bg-gray-900"
+      id="container"
+    >
       <BrowserRouter>
         <Routes path="/">
           <Route index element={<HomePage />} />

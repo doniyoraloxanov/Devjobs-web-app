@@ -13,13 +13,13 @@ const CareerDetails = () => {
   });
 
   return (
-    <div className="bg-gray-200 relative">
+    <div className="bg-gray-200 relative dark:bg-gray-900">
       <Header />
 
-      {/* Header */}
+      {/* Job  Header */}
       <div className="max-w-sm mx-auto md:max-w-2xl  ">
-        <div className=" relative  top-[-40px]">
-          <div className=" bg-white px-20 py-8 flex flex-col space-y-2 md:flex md:flex-row md:space-y-0  md:space-x-32  ">
+        <div className=" relative  top-[-40px]  ">
+          <div className=" bg-white dark:bg-black px-20 py-8 flex flex-col space-y-2 md:flex md:flex-row md:space-y-0  md:space-x-32  ">
             <img
               src={job.logo}
               className={`bg-orange-800 md:w-36 inline-block  p-6 md:p-10  absolute top-[-25px]  self-center  md:top-0 md:left-0 
@@ -28,11 +28,11 @@ const CareerDetails = () => {
       `}
             />
 
-            <div className="mx-auto pb-6 flex flex-col">
-              <p className="font-semibold ml-2 text-lg md:ml-0 ">
+            <div className="mx-auto pb-6 flex flex-col ">
+              <p className="font-semibold ml-2 text-lg md:ml-0  dark:text-white">
                 {job.company}
               </p>
-              <p className="">{job.company}.com</p>
+              <p className="dark:text-gray-300">{job.company}.com</p>
             </div>
             <div className="md:pt-4 md:pl-8">
               <a
@@ -45,7 +45,7 @@ const CareerDetails = () => {
           </div>
         </div>
         {/* Main Content */}
-        <div className="bg-white  mb-8  py-10  md:px-12 ">
+        <div className="bg-white  mb-8  py-10  md:px-12  dark:bg-black dark:text-gray-300 ">
           <div className="mx-8 mb-8 md:flex md:items-center md:justify-between">
             <section>
               <div className="flex space-x-6 mb-2  ">
@@ -53,7 +53,9 @@ const CareerDetails = () => {
                 <p>{job.contract}</p>
               </div>
               <div className="mb-6">
-                <h2 className="font-semibold text-lg">{job.position}</h2>
+                <h2 className="font-semibold text-lg  dark:text-white">
+                  {job.position}
+                </h2>
                 <p className="text-blue-600">{job.location}</p>
               </div>
             </section>
@@ -72,7 +74,9 @@ const CareerDetails = () => {
 
             {/* Requirements */}
             <div>
-              <h2 className="font-semibold text-lg mb-4">Requirements</h2>
+              <h2 className="font-semibold text-lg mb-4 dark:text-white">
+                Requirements
+              </h2>
               {Object.values(job).map((x, i) => (
                 <div key={i}>
                   <div className=" mb-6">{x.content}</div>
@@ -104,11 +108,13 @@ const CareerDetails = () => {
         </div>
       </div>
       {/* Footer Desktop */}
-      <div className="bg-white p-6 w-full  hidden md:block">
+      <div className="bg-white p-6 w-full  hidden md:block dark:bg-black">
         <section className="flex mx-auto max-w-2xl justify-between">
           <div>
-            <h2 className="font-semibold text-lg">{job.position}</h2>
-            <p className="text-blue-600">{job.location}</p>
+            <h2 className="font-semibold text-lg  dark:text-white">
+              {job.position}
+            </h2>
+            <p className="dark:text-gray-300">{job.company}</p>
           </div>
           <div>
             <a

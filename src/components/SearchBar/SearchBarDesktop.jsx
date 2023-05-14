@@ -8,13 +8,13 @@ const SearchBarDesktop = ({
   isChecked,
 }) => {
   return (
-    <div className="hidden md:block  ">
-      <form onSubmit={handleSubmit} className="flex  ">
+    <div className="hidden md:block ">
+      <form onSubmit={handleSubmit} className="flex">
         {/* Search by title*/}
-        <div className="relative">
+        <div className="relative ">
           <input
             placeholder="Filter by title..."
-            className="outline-none  py-6  px-6 pl-16  lg:w-[400px]  w-auto"
+            className="outline-none  py-6  px-6 pl-16  lg:w-[400px]  w-auto dark:bg-black "
             type="text"
             id="title"
             value={title}
@@ -25,7 +25,7 @@ const SearchBarDesktop = ({
               <path
                 d="M17.112 15.059h-1.088l-.377-.377a8.814 8.814 0 002.15-5.784A8.898 8.898 0 008.898 0 8.898 8.898 0 000 8.898a8.898 8.898 0 008.898 8.899c2.211 0 4.23-.808 5.784-2.143l.377.377v1.081l6.845 6.832 2.04-2.04-6.832-6.845zm-8.214 0A6.16 6.16 0 118.9 2.737a6.16 6.16 0 010 12.322z"
                 fill="#5964E0"
-                fill-rule="nonzero"
+                fillRule="nonzero"
               />
             </svg>
           </span>
@@ -35,7 +35,7 @@ const SearchBarDesktop = ({
         <div className="relative">
           <input
             placeholder="Filter by location..."
-            className="outline-none  py-6  px-6 pl-16   w-auto  lg:w-[400px]"
+            className="outline-none  py-6  px-6 pl-16 dark:bg-black   w-auto  lg:w-[400px]"
             type="text"
             value={location}
             id="location"
@@ -53,8 +53,8 @@ const SearchBarDesktop = ({
         </div>
         <div className=" border"></div>
         {/* Checkbox */}
-        <div className="flex items-center bg-white   w-auto  lg:w-[400px] px-6 space-x-10 lg:space-x-28 ">
-          <div className="flex items-center lg:space-x-8">
+        <div className="flex items-center bg-white   w-auto  lg:w-[400px] px-6 space-x-10 lg:space-x-28 dark:bg-black ">
+          <div className="flex items-center lg:space-x-8 ">
             <input
               id="default-checkbox"
               type="checkbox"
@@ -62,11 +62,11 @@ const SearchBarDesktop = ({
               value={isChecked}
               checked={isChecked}
               onChange={onChange}
-              className="w-6 h-6  text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 "
+              className="w-6 h-6   text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 "
             />
             <label
               htmlFor="checkbox"
-              className="ml-2 text-md font-bold text-gray-900  flex space-x-2"
+              className="ml-2 text-md font-bold text-gray-900  flex space-x-2 dark:text-gray-400"
             >
               <span>Full</span>
               <span>Time</span>
